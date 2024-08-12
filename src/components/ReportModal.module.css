@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  outline: none;
+  width: 35%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.filter-box {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.filter-box button {
+  flex: 1;
+}

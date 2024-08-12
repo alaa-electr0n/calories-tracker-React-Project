@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --theme-backgroundp-ultralight: #effaff;
+  --theme-backgroundp-accent-normal: #a0d2eb;
+  --theme-backgroundp-light: #e5eaf5;
+  --theme-color-primary-light: #d0bdf4;
+  --theme-color-primary-normal: #8458b3;
+  --theme-color-dark: #494d5f;
+}
+
+a {
+  font-weight: 500;
+  color: var(--theme-color-dark);
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+  min-width: 340px;
+}
+
+.heading {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: var(--theme-color-primary-normal);
+  color: var(--theme-backgroundp-light);
+
+  transition-property: background-color, color;
+}
+button:hover {
+  background-color: var(--theme-color-primary-light);
+  color: var(--theme-color-dark);
+}
+button:focus,
+button:focus-visible {
+  /* outline: 4px auto -webkit-focus-ring-color; */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--theme-color-dark);
+    background-color: #ffffff;
+  }
+
+  a:link,
+  a:visited {
+    color: var(--theme-color-primary-normal);
+    transition: color, padding-left;
+  }
+  a:hover {
+    padding-left: 1rem;
+    color: #747bff;
+  }
+  button {
+    background-color: var(--theme-color-primary-normal);
+    color: var(--theme-backgroundp-light);
+    border: 1px solid var(--theme-color-primary-normal);
+
+    transition-property: background-color, color, border;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+  body {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    /* padding: 20px; */
+    margin: 0 auto;
+  }
+}
+
+button,
+a:visited,
+a:link {
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+/* .button {
+  float: right;
+}
+.button ::after {
+  content: "";
+  clear: both;
+} */
+
+.main-app {
+  /* width: 90%; */
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  /* column-gap: 0.5rem; */
+  min-height: 100vh;
+}
+@media (max-width: 350px) {
+  .main-app {
+    display: flex;
+    flex-direction: column;
+  }
+}
