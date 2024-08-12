@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "id": "1722285609521",
+      "date": "2024-07-29T00:00:00.000Z",
+      "meal": "snacks",
+      "ingredient": "chocolate",
+      "calories": "0590"
+    },
+    {
+      "id": "1722285910657",
+      "date": "2024-07-31T00:00:00.000Z",
+      "meal": "lunch",
+      "ingredient": "rice",
+      "calories": "0600"
+    },
+    {
+      "id": 1722287484236,
+      "date": "2024-07-29T00:00:00.000Z",
+      "meal": "breakfast",
+      "ingredient": "coffee",
+      "calories": "0200"
+    },
+    {
+      "id": 1722287571255,
+      "date": "2024-07-31T00:00:00.000Z",
+      "meal": "lunch",
+      "ingredient": "meat",
+      "calories": "0600"
+    }
+  ]
+}

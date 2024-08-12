@@ -1,0 +1,41 @@
+.landingPage {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landingPage::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(2, 3, 8, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.landingPage .landingPhoto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.landingPage h2 {
+  text-align: center;
+  color: var(--theme-backgroundp-ultralight);
+  margin: 1rem auto 3rem;
+}
+
+.landingPage h2 span {
+  font-weight: 600;
+  letter-spacing: 3px;
+  word-spacing: 2.5px;
+  color: var(--theme-color-primary-light);
+  margin: 2px 0;
+  font-size: 3.6rem;
+}

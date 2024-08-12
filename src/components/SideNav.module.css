@@ -1,0 +1,89 @@
+.sidenav {
+  grid-column: 1/2;
+
+  /* height: 100vh; */
+  background-color: var(--theme-backgroundp-accent-normal);
+  color: var(--theme-color-dark);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  height: 100%;
+  border: 1px solid var(--theme-backgroundp-accent-normal);
+  outline: 1px solid var(--theme-backgroundp-accent-normal);
+  outline-offset: 2px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+/* @media (max-width: 350px) {
+  .sidenav.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+} */
+
+@media (max-width: 350px) {
+  .sidenav {
+    grid-column: 1/-1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.sidenav .logo {
+  font-size: 2.4rem;
+}
+
+@media (max-width: 350px) {
+  .sidenav .logo {
+    font-size: 1.4rem;
+  }
+}
+
+.sidenav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 5rem auto;
+}
+
+@media (max-width: 350px) {
+  .sidenav ul {
+    flex-direction: row;
+    margin: 0;
+    gap: 0.5rem;
+  }
+}
+
+.sidenav ul li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.sidenav a:link,
+.sidenav a:visited {
+  padding: 1rem 0;
+  transition: padding 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sidenav ul li :global(a.active) {
+  padding: 1rem 0 0 2rem;
+  color: crimson;
+}
+
+.sidenav-footer {
+  font-size: 0.8rem;
+  margin-top: auto;
+  display: block;
+}
+
+@media (max-width: 350px) {
+  .sidenav .sidenav-footer {
+    display: none;
+  }
+}
